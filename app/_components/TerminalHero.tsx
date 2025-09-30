@@ -8,25 +8,28 @@ const TerminalHero = () => {
   return (
     <div className="flex justify-center items-center w-full">
       <Terminal>
-        <TypingAnimation>pnpm dlx shadcn@latest init</TypingAnimation>
+        <TypingAnimation>pnpm dlx saad@latest init</TypingAnimation>
         <AnimatedSpan className="text-green-500">
-          ✔ Preflight checks.
+          ✔ Software-Engineer check.
         </AnimatedSpan>
         <AnimatedSpan className="text-green-500">
-          ✔ Validating Tailwind CSS.
+          ✔ Web-Developer check.
         </AnimatedSpan>
-        <TypingAnimation>
-          Success! Project initialization completed.
-        </TypingAnimation>
+        <AnimatedSpan className="text-green-500">
+          ✔ Mobile-App-Developer check.
+        </AnimatedSpan>
+        <AnimatedSpan className="text-green-500">
+          ✔ Game-Developer check.
+        </AnimatedSpan>
         <AnimatedSpan className="text-blue-500">
           <span>Updated 1 file:</span>
-          <span className="pl-2">- lib/utils.ts</span>
+          <span className="pl-2">- brain/aiml.ts</span>
         </AnimatedSpan>
         <TypingAnimation className="text-muted-foreground">
-          Success! Project initialization completed.
+          Success! talents described completed.
         </TypingAnimation>
         <TypingAnimation className="text-muted-foreground">
-          You may now add components.
+          You may now scroll down.
         </TypingAnimation>
       </Terminal>
     </div>
