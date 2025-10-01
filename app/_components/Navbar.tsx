@@ -15,34 +15,26 @@ const funnel = Funnel_Sans({
 
 const tabs = [
   {
-    title: "About",
-    link: "#about",
-  },
-  {
-    title: "Experience",
-    link: "#experience",
-  },
-  {
-    title: "Skills",
-    link: "#skills",
-  },
-  {
     title: "Projects",
-    link: "#projects",
+    link: "/projects",
   },
   {
     title: "Services",
-    link: "#services",
+    link: "/services",
+  },
+  {
+    title: "Certificates",
+    link: "/certificates",
   },
   {
     title: "Contact",
-    link: "#contact",
+    link: "/contact",
   },
 ];
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center w-full lg:px-20 px-4 py-4 lg:py-6">
+    <div className="flex justify-between bg-white dark:bg-neutral-800 items-center w-full lg:px-16 px-4 py-4 lg:py-6">
       <div className="flex justify-start items-center gap-x-3">
         <Button variant="secondary" className="block lg:hidden">
           <Menu className="w-4 h-4 text-black/60" />
@@ -50,16 +42,13 @@ const Navbar = () => {
         <h1 className={`${monsieur.className} text-4xl`}>Saad</h1>
       </div>
       <ul
-        className={`lg:flex hidden justify-start items-center gap-x-8 text-base ${funnel.className}`}
+        className={`lg:flex hidden justify-center text-center items-center gap-x-8 text-base ${funnel.className}`}
       >
         {tabs.map((item, idx) => (
           <li key={idx}>
             <Link href={item.link}>{item.title}</Link>
           </li>
         ))}
-        <Link href={"/"}>
-          <Button className={`${funnel.className}`}>Resume</Button>
-        </Link>
       </ul>
       <div className="lg:hidden flex justify-start items-center gap-x-2">
         <Button variant="secondary">
@@ -68,6 +57,16 @@ const Navbar = () => {
         <Button variant="secondary">
           <Moon className="w-4 h-4 text-black/60" />
         </Button>
+      </div>
+      <div className="hidden lg:flex justify-start items-center gap-x-2">
+        <Button>
+          <Moon className="w-4 h-4" />
+        </Button>
+        <Link href={"/"}>
+          <Button className={`${funnel.className} lg:block hidden`}>
+            Resume
+          </Button>
+        </Link>
       </div>
     </div>
   );

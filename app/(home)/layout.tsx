@@ -9,11 +9,11 @@ const funnel = Funnel_Sans({
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <header>
+      <header className="w-full z-50 fixed top-0">
         <Navbar />
       </header>
       <main
-        className={`${funnel.className} flex justify-center items-center w-full p-6 lg:p-10`}
+        className={`${funnel.className} flex justify-center items-center w-full p-6 lg:p-10 lg:mt-10 mt-20`}
       >
         {children}
       </main>
