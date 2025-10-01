@@ -17,8 +17,8 @@ const Home = () => {
           transition={{ duration: 5, ease: "easeOut", delay: 5 }}
         >
           <TextReveal>
-            I am an experienced fullstack software development engineer
-            specializing in crafting web, mobile and desktop apps.
+            I Am An Experienced Fullstack Software Development Engineer
+            Specializing In Crafting Web, Mobile And Desktop Apps.
           </TextReveal>
         </motion.div>
       </div>
